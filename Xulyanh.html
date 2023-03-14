@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xulyanh</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <style>
+    #allin{
+        background-color: rgb(218, 218, 218);
+border: 0.1px solid  rgb(218, 218, 218);
+height:max-content;
+margin-top: -0px;
+border-radius: 5px;
+width: max-content;
+padding-right: 100px;
+
+
+      }
+      #divall{
+        
+        display: flex;
+
+        border-radius: 10px;
+ background-color: white;
+        padding-left: 150px;
+        padding-right: 60px;
+        width: max-content;
+        margin-left: 100px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        margin-right: 10px;
+      }
+      #divset{
+    
+        text-align: center;
+        padding-bottom: 30px;
+        width: max-content;
+    
+        margin-top: 100px;
+      }
+      #divview{
+ display: flex;
+ text-align: center;
+ padding-bottom: 30px;
+ width: max-content;
+ margin-left: 250px;
+ margin-top: 100px;
+
+
+}
+#divtext{
+display: none;
+  padding-top: 30px;
+} 
+#divimgnghia{
+display: none;
+margin-top: 30px;
+} 
+#divinview{
+  margin-right: 100px;
+}
+
+      #set{
+        display: none;
+      }
+      
+      #set2{
+        display: none;
+      }
+      #demo{
+        border: 1px solid gray;
+   
+        width: 350px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+      #forp{
+        position: absolute;
+        font-size: 55px;
+        color: gray;
+        margin-left: 458px;
+        margin-top: 250px;
+      }
+    
+      #inchu{
+        border: 0.1px solid gray;
+        border-radius: 5px;
+        color: gray;
+        padding: 10.5px 14px 9.5px 14px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: white;
+      }
+      #fornghia{
+        border: 0.1px solid gray;
+        border-radius: 5px;
+        color: gray;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        background-color: white;
+      }
+      #fornghia:hover{
+        background-color: rgb(243, 243, 243);
+      }
+      #fornghia2{
+        border: 0.1px solid gray;
+        border-radius: 5px;
+        color: gray;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        background-color: white;
+      
+      }
+      #fornghia2:hover{
+        background-color: rgb(243, 243, 243);
+      }
+      #inanh{
+        border: 0.1px solid gray;
+        border-radius: 5px;
+        color: gray;
+        padding: 10.5px 14px 9.5px 14px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: white;
+      }
+      #inanh:hover{
+        background-color: rgb(243, 243, 243);
+      }
+     
+      #inchu:hover{
+        background-color: rgb(243, 243, 243);
+      }
+      #changnghia{
+ 
+        width: 350px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+      #text{
+        height: 35px;
+        border-radius: 5px;
+        border:0.1px solid gray;
+        padding-left: 10px;
+      }
+      #click{
+        border: none;
+        width: 50px;
+        height: 38px;
+        margin-left: 10px;
+        color: gray;
+        border-radius: 5px;
+    cursor: pointer;
+      }
+      #click:hover{
+        opacity: 0.8;
+      }
+      #tai{
+        border: 0.1 solid gray;
+        background-color:rgb(237, 237, 237);
+        padding: 8px 20px 8px 20px;
+        border-radius: 5px;
+        color: gray;
+        text-decoration: none;
+    cursor: pointer;
+      }
+      #tai:hover{
+        opacity: 0.8;
+      }
+      #taiimg{
+        border: 0.1 solid gray;
+        background-color:rgb(237, 237, 237);
+        padding: 8px 20px 8px 20px;
+        border-radius: 5px;
+        color: gray;
+        text-decoration: none;
+    cursor: pointer;
+      }
+      #taiimg:hover{
+        opacity: 0.7;
+      }
+    </style>
+    <div id="allin">
+    <!-- (A) HTML CANVAS -->
+    <div id="divall">
+ 
+    <div id="divset">
+    <img src="" id="changnghia" width="100px"><br><br>
+    <input type="file" id="set" onchange="view(this)">
+    <label id="fornghia" for="set">CHỌN ẢNH</label>
+    </div>
+    <br>    <p id="forp"> &#8652</p>
+    <div id="divview">
+      <div id="divinview">
+      <canvas id="demo">123465</canvas><br>
+      
+      <div id="div1in2" style="display: none;">
+       
+        <input type="button" value="CHÈN ẢNH" id="inanh">
+      <input type="button" value="CHÈN CHỮ" id="inchu">
+      </div>
+
+      <div id="divtext">
+    <input type="text" id="text" placeholder="Nhập text" >
+    <input type="button" id="click"value="IN">
+    </div>
+    <div id="xuat" style="color: red;"></div><br>
+
+    <div id="divimgnghia">
+      <input type="file" id="set2" >
+      <label id="fornghia2" for="set2">CHỌN ẢNH</label>
+
+      </div>
+
+    </div>
+    <div>
+  
+
+
+    <form id="tunghoanhimg" style="display: none;">
+  
+    
+    <span>Độ nghiêng:</span>
+    <input type="range" id="nghiengimg" name="nghiengimg"value="52" min="1" max="104" style="width:300px" oninput="trucnghiengimg.value=parseFloat(nghiengimg.value)">
+    <br>
+   
+    <output name="trucnghiengimg"for="nghiengimg"></output><span> <sup>&#8728</sup></span><br><br>
+
+      <span>Kích thước:</span>
+      <input type="range" id="kichthuocimg" name="kichthuocimg"value="15" min="10" max="200" style="width:300px" oninput="truckichthuocimg.value=parseInt(kichthuocimg.value)">
+      <br>
+     
+      <output name="truckichthuocimg"for="kichthuocimg"></output><span> %</span><br><br>
+
+      <span>Độ đậm:</span>
+      <input type="range" id="damimg" name="damimg"value="9" min="1" max="10" style="width:300px" oninput="trucdamimg.value=parseFloat(damimg.value)">
+      <br>
+     
+      <output name="trucdamimg"for="damimg"></output><span> %</span><br><br>
+
+
+      <span>Trục x:</span>
+      <input type="range" id="volximg" name="volximg"value="20" min="0" max="1540" style="width:300px" oninput="trucximg.value=parseInt(volximg.value)">
+      <br>
+     
+      <output name="trucximg"for="volximg"></output><span> pixel</span><br><br>
+
+      <span>Trục y:</span>
+    <input type="range" id="volyimg" name="volyimg"value="20" min="0" max="1540" style="width:300px" oninput="trucyimg.value=parseInt(volyimg.value)">
+    <br>
+   
+    <output name="trucyimg"for="volyimg"></output><span> pixel</span><br><br>
+    <a id="taiimg">Tải Xuống</a>
+    
+    </form>
+
+
+
+    <form id="tunghoanh" style="display: none;">
+      <span>Màu sắc:</span>
+      <input type="color" id="color" name="color" value="#ff0000">
+      <br>
+     
+    <br><br>
+    
+    <span>Độ nghiêng:</span>
+    <input type="range" id="nghieng" name="nghieng"value="52" min="1" max="104" style="width:300px" oninput="trucnghieng.value=parseFloat(nghieng.value)">
+    <br>
+   
+    <output name="trucnghieng"for="nghieng"></output><span> <sup>&#8728</sup></span><br><br>
+
+      <span>Cỡ chữ:</span>
+      <input type="range" id="cochu" name="cochu"value="20" min="1" max="200" style="width:300px" oninput="trucchu.value=parseInt(cochu.value)">
+      <br>
+     
+      <output name="trucchu"for="cochu"></output><span> pixel</span><br><br>
+
+      <span>Độ đậm:</span>
+      <input type="range" id="dam" name="dam"value="9" min="1" max="10" style="width:300px" oninput="trucdam.value=parseFloat(dam.value)">
+      <br>
+     
+      <output name="trucdam"for="dam"></output><span> %</span><br><br>
+
+
+      <span>Trục x:</span>
+      <input type="range" id="volx" name="volx"value="10" min="0" max="1540" style="width:300px" oninput="trucx.value=parseInt(volx.value)">
+      <br>
+     
+      <output name="trucx"for="volx"></output><span> pixel</span><br><br>
+
+      <span>Trục y:</span>
+    <input type="range" id="vol" name="vol"value="10" min="0" max="1540" style="width:300px" oninput="trucy.value=parseInt(vol.value)">
+    <br>
+   
+    <output name="trucy"for="vol"></output><span> pixel</span><br><br>
+    <a id="tai">Tải Xuống</a>
+    
+    </form>
+    </div>
+      </div>
+    </div>
+</div>
+
+
+
+    <script>
+  
+        
+      
+function view(file){
+ document.getElementById("div1in2").style.display="block";
+  var r=new FileReader();
+  r.readAsDataURL(file.files[0])
+  r.onload=function(e){
+    $("#changnghia").attr('src',e.target.result);
+  
+    document.getElementById("inchu").onclick = inchu;
+    document.getElementById("inanh").onclick = inanh;
+  
+    var nen= new Image();
+        iMark2 = new Image();
+        nen.src = e.target.result;
+    function inanh(){
+       
+      document.getElementById("divimgnghia").style.display= "block";
+      document.getElementById("divtext").style.display= "none";
+      
+      document.getElementById("text").style.borderColor="gray";
+      document.getElementById("xuat").innerHTML="";
+    }
+
+
+
+      function themanh(){
+        fileinput = document.getElementById("set2");
+        var r2 = new FileReader();
+        r2.readAsDataURL(fileinput.files[0]);
+        r2.onload =function(a){
+
+  
+        iLoaded = 0,
+        canvas = document.getElementById("demo"),
+        ctx = canvas.getContext("2d");
+
+
+    function image () {  
+
+      nghiengimg=document.getElementById("nghiengimg").value;
+      ximg=document.getElementById("volximg").value;
+      yimg=document.getElementById("volyimg").value;
+      damimg=document.getElementById("damimg").value;
+      todamimg=damimg*0.1;
+      sizeimg=document.getElementById("kichthuocimg").value;
+      xsizeimg=sizeimg*4;
+      ysizeimg=sizeimg*4-10;
+
+
+      document.getElementById("tunghoanh").style.display= "none";
+      document.getElementById("tunghoanhimg").style.display= "block";
+
+      canvas.width = nen.naturalWidth;
+      canvas.height = nen.naturalHeight;
+      ctx.drawImage(nen, 0, 0, nen.naturalWidth, nen.naturalHeight);
+
+      
+      ctx.globalAlpha=todamimg;
+      ctx.translate(ximg,yimg);
+      ctx.rotate(nghiengimg*Math.PI/26);
+      ctx.drawImage(iMark2, 0, 0, xsizeimg, ysizeimg);
+
+  
+      saveimg = document.getElementById("taiimg");
+      saveimg .href = canvas.toDataURL("image/png");
+      saveimg .download = "changnghia.png";
+      
+    }
+  
+    iMark2.onload = image;
+    nen.onload =image;
+    document.getElementById("volximg").onchange=image;
+    document.getElementById("volyimg").onchange=image;
+    document.getElementById("nghiengimg").onchange=image;
+    document.getElementById("kichthuocimg").onchange=image;
+    document.getElementById("damimg").onchange=image;
+    iMark2.src = a.target.result;
+  }
+  }
+
+  document.getElementById("set2").onchange = themanh;
+
+
+    
+
+    function inchu(){
+
+      document.getElementById("divimgnghia").style.display= "none";
+      document.getElementById("divtext").style.display= "block";
+    }
+    var iBack = new Image();
+    
+    function cmark () {
+       
+      iMark = document.getElementById("text").value;
+      if(iMark){
+
+        document.getElementById("text").style.borderColor="gray";
+      document.getElementById("xuat").innerHTML="";
+
+      document.getElementById("tunghoanh").style.display= "block";
+      document.getElementById("tunghoanhimg").style.display= "none";
+
+
+      cao=parseFloat(document.getElementById("vol").value);
+      rong=parseFloat(document.getElementById("volx").value);
+      font=document.getElementById("cochu").value;
+      color=document.getElementById("color").value;
+      dam=parseFloat(document.getElementById("dam").value);
+      todam=dam*0.1;
+      nghieng=parseFloat(document.getElementById("nghieng").value);
+   
+      canvas = document.getElementById("demo"),
+        ctx = canvas.getContext("2d");
+
+
+
+      canvas.width = iBack.naturalWidth;
+      canvas.height = iBack.naturalHeight;
+      ctx.drawImage(iBack, 0, 0, canvas.width,canvas.height);
+
+
+      ctx.translate(rong,cao);
+      ctx.rotate(nghieng*-Math.PI/26);
+  
+
+      ctx.font = "bold "+font+"px Times New Roman";
+      ctx.globalAlpha=todam;
+     
+  
+      ctx.fillStyle = color;
+      ctx.fillText(iMark, 10, 30);
+
+   
+      save = document.getElementById("tai");
+      save.href = canvas.toDataURL("image/png");
+      save.download = "changnghia.png";
+      
+
+    }
+    else{
+      document.getElementById("text").style.borderColor="red";
+      document.getElementById("xuat").innerHTML="Không được để trống";
+    }
+    }
+    
+    document.getElementById("click").onclick=cmark;
+    document.getElementById("vol").onchange=cmark;
+    document.getElementById("volx").onchange=cmark;
+    document.getElementById("cochu").onchange=cmark;
+    document.getElementById("color").onchange=cmark;
+    document.getElementById("dam").onchange=cmark;
+    document.getElementById("nghieng").onchange=cmark;
+    iBack.src = e.target.result;
+
+  
+
+
+
+}
+
+}
+    </script>
+  </body>
+</html>
